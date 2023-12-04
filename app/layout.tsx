@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={raleway.className}>
-        <div className="bg-[#FEF7F7] px-2 lg:px-12 lg:py-2 relative overflow-x-hidden h-screen w-full">
+        <div className="bg-[#FEF7F7] px-2 lg:px-12 lg:py-2 relative overflow-x-hidden h-full w-full">
           <Navigation />
           <div>{children}</div>
         </div>

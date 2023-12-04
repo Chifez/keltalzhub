@@ -4,10 +4,11 @@ import Button from '@/components/shared/Button';
 import { FaPlayCircle } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
+import Curriculum from './curriculum';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="h-full w-full">
       <div className="w-full h-full flex flex-col text-center lg:text-justify lg:flex-row gap-5 px-5 lg:px-0 py-2">
         <div className="w-full">
           <div>
@@ -69,6 +70,9 @@ const HomePage = () => {
             extraclass="flex items-center justify-center gap-2 border-2 border-[#000B6A] bg-white text-base py-1  "
           />
         </div>
+      </div>
+      <div className="h-screen mt-12 w-full ">
+        <Curriculum />
       </div>
     </div>
   );
