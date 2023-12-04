@@ -24,7 +24,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="flex justify-between items-center h-[10vh] lg:mb-8 max-w-full sticky top-0 z-50">
+      <nav className="bg-[#FEF7F7] flex justify-between items-center h-[10vh] lg:mb-8 max-w-full sticky top-0 z-50">
         <Link href="/" className="flex-1 flex items-center">
           <Image
             src="keltalz_logo.svg"
