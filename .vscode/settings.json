@@ -1,0 +1,7 @@
+{
+  "files.autoSave": "onFocusChange", // Optional: Adjust auto-save settings
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "tasks.autoDetect": "onSave"
+}

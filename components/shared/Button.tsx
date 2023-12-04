@@ -1,6 +1,5 @@
 import Link, { LinkProps } from 'next/link';
 import { ReactNode } from 'react';
-import { Url } from 'url';
 
 interface Props {
   title: String;
@@ -12,11 +11,17 @@ interface Props {
 const Button = ({ title, icon, extraclass, onClick, url }: Props) => {
   return (
     <button
-      className={`py-2 px-4 rounded-lg bg-[#000B6A] text-base ${extraclass}`}
+      className={`rounded-lg bg-[#000B6A] text-center text-base ${extraclass}`}
       onClick={onClick}
     >
       {icon}
-      {url ? <Link href={url}>{title}</Link> : <p>{title}</p>}
+      {url ? (
+        <Link href={url} className="line-clamp-1">
+          {title}
+        </Link>
+      ) : (
+        <p className="line-clamp-1">{title}</p>
+      )}
     </button>
   );
 };

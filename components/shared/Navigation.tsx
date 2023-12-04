@@ -24,7 +24,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="flex justify-between items-center h-[10vh] lg:mb-8 max-w-full">
+      <nav className="flex justify-between items-center h-[10vh] lg:mb-8 max-w-full sticky top-0 z-50">
         <Link href="/" className="flex-1 flex items-center">
           <Image
             src="keltalz_logo.svg"
@@ -34,7 +34,7 @@ const Navigation = () => {
           />
           Keltalz_Tech
         </Link>
-        <div className="block lg:hidden" onClick={toggleMenu}>
+        <div className="block mr-5 lg:hidden" onClick={toggleMenu}>
           <RxHamburgerMenu />
         </div>
         <ul
@@ -52,7 +52,11 @@ const Navigation = () => {
               ></span>
             </li>
           ))}
-          <Button title="Start learning" url="/" extraclass="text-white" />
+          <Button
+            title="Start learning"
+            url="/"
+            extraclass="text-2xl py-2 px-2 md:px-4 text-white"
+          />
         </ul>
       </nav>
     </>
