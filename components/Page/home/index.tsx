@@ -71,7 +71,7 @@ const HomePage = () => {
           />
         </div>
       </div>
-      <div className="h-screen mt-12 w-full ">
+      <div className=" mt-12 w-full ">
         <Curriculum />
       </div>
     </div>
