@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import { Raleway } from 'next/font/google';
 import './globals.css';
 import Navigation from '@/components/shared/Navigation';
+import Footer from '@/components/shared/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 const raleway = Raleway({ weight: ['500', '700'], subsets: ['latin'] });
@@ -20,9 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={raleway.className}>
-        <div className="bg-[#FEF7F7] px-2 lg:px-12 lg:py-2 relative overflow-x-hidden h-full w-full">
+        <div className="bg-[#FEF7F7] relative overflow-x-hidden h-full w-full">
           <Navigation />
-          <div>{children}</div>
+          <div className="px-2 lg:px-12 lg:py-2">
+            <div>{children}</div>
+          </div>
+          <Footer />
         </div>
       </body>
     </html>
