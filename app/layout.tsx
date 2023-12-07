@@ -15,19 +15,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  background,
 }: {
   children: React.ReactNode;
+  background?: String;
 }) {
   return (
     <html lang="en">
       <body className={raleway.className}>
-        <div className="bg-[#FEF7F7] relative overflow-x-hidden h-full w-full">
+        <div
+          className={`${background} bg-[#FEF7F7] px-2 lg:px-12 lg:py-2 relative overflow-x-hidden h-full w-full`}
+        >
           <Navigation />
-          <div className="px-2 lg:px-12 lg:py-2">
-            <div>{children}</div>
-          </div>
-          <Footer />
+          <div>{children}</div>
         </div>
+        <Footer />
       </body>
     </html>
   );
