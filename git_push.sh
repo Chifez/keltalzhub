@@ -21,7 +21,7 @@ fi
 echo "Committed files"
 
 # Push changes to the remote repository
-git push origin main  # Adjust 'main' to your branch name if needed
+git push origin master  # Adjust 'main' to your branch name if needed
 if [ $? -ne 0 ]; then
     echo "Error: Unable to push changes."
     exit 1
