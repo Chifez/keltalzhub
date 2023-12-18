@@ -4,6 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import CourseCard from './CourseCard';
+import CustomArrows from './CustomArrows';
+import { MdNavigateBefore, MdNavigateNext } from 'react-icons/md';
 
 const CoursePage = () => {
   const settings = {
@@ -13,6 +15,17 @@ const CoursePage = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     swipeToSlide: true,
+    className: 'rounded-3xl',
+    nextArrow: (
+      <CustomArrows arrowtype="left">
+        <MdNavigateBefore className="w-8 h-8" />
+      </CustomArrows>
+    ),
+    prevArrow: (
+      <CustomArrows arrowtype="right">
+        <MdNavigateNext className="w-8 h-8" />
+      </CustomArrows>
+    ),
   };
 
   const CourseList = [
@@ -71,7 +84,9 @@ const CoursePage = () => {
   ];
   return (
     <div className="px-6 md:px-12">
-      <h1 className="text-center font-semibold text-5xl pb-4">Our Courses</h1>
+      <h1 className="text-center font-semibold text-4xl pb-2 md:pb-4">
+        Our Courses
+      </h1>
       {CourseList.map((item, idx) => (
         <div key={idx} className=" mb-20">
           <p className="text-center text-[#2D2D2E] font-semibold text-2xl pb-4">
@@ -82,8 +97,8 @@ const CoursePage = () => {
               <CourseCard course={course} key={idx} />
             ))}
           </div>
-          <div className="md:hidden">
-            <Slider {...settings}>
+          <div className="md:hidden relative">
+            <Slider {...settings} className="border mx-3 rounded-3xl ">
               {item.list.map((course, idx) => (
                 <CourseCard course={course} key={idx} />
               ))}

@@ -59,7 +59,7 @@ import Navigation from '@/components/shared/Navigation';
 import Footer from '@/components/shared/Footer';
 import { useRouter } from 'next/navigation';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const raleway = Raleway({ weight: ['500', '700'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -71,9 +71,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   const background = 'bg-[#FEF7F7]';
   return (
     <html lang="en">
-      <body className={raleway.className}>
+      <body className={`${raleway.className} ${inter.variable}`}>
         <div
-          className={`${background} px-2 lg:px-12 lg:py-2 relative overflow-x-hidden h-full w-full`}
+          className={`${background}  lg:px-12 lg:py-2 relative overflow-x-hidden h-full w-full`}
         >
           <Navigation />
           <div>{children}</div>

@@ -1,4 +1,4 @@
 const TestimonyPage = () => {
-  return <div>Testimony</div>;
+  return <div className="h-screen">Testimony</div>;
 };
 export default TestimonyPage;
