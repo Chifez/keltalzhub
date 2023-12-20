@@ -6,6 +6,7 @@ import Slider from 'react-slick';
 import CourseCard from './CourseCard';
 import CustomArrows from './CustomArrows';
 import { MdNavigateBefore, MdNavigateNext } from 'react-icons/md';
+import { CourseList } from '@/libs/data/courseData';
 
 const CoursePage = () => {
   const settings = {
@@ -28,60 +29,61 @@ const CoursePage = () => {
     ),
   };
 
-  const CourseList = [
-    {
-      header: ' Design Courses',
+  // const CourseList = [
+  //   {
+  //     header: ' Design Courses',
 
-      list: [
-        {
-          title: 'Video Editing',
-          desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
-          image: '/designOne.png',
-        },
-        {
-          title: 'UI/UX',
-          desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
-          image: '/designTwo.png',
-        },
-        {
-          title: 'Graphic Design',
-          desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
-          image: '/designThree.png',
-        },
-        {
-          title: 'Animations',
-          desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
-          image: '/designFour.png',
-        },
-      ],
-    },
-    {
-      header: ' Programming',
+  //     list: [
+  //       {
+  //         title: 'Video Editing',
+  //         desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
+  //         image: '/designOne.png',
+  //         url:'/course/'
+  //       },
+  //       {
+  //         title: 'UI/UX',
+  //         desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
+  //         image: '/designTwo.png',
+  //       },
+  //       {
+  //         title: 'Graphic Design',
+  //         desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
+  //         image: '/designThree.png',
+  //       },
+  //       {
+  //         title: 'Animations',
+  //         desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
+  //         image: '/designFour.png',
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     header: ' Programming',
 
-      list: [
-        {
-          title: 'web Development',
-          desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
-          image: '/designOne.png',
-        },
-        {
-          title: 'App Development',
-          desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
-          image: '/designTwo.png',
-        },
-        {
-          title: 'Machine Learning',
-          desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
-          image: '/designThree.png',
-        },
-        {
-          title: 'Data science',
-          desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
-          image: '/designFour.png',
-        },
-      ],
-    },
-  ];
+  //     list: [
+  //       {
+  //         title: 'web Development',
+  //         desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
+  //         image: '/designOne.png',
+  //       },
+  //       {
+  //         title: 'App Development',
+  //         desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
+  //         image: '/designTwo.png',
+  //       },
+  //       {
+  //         title: 'Machine Learning',
+  //         desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
+  //         image: '/designThree.png',
+  //       },
+  //       {
+  //         title: 'Data science',
+  //         desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
+  //         image: '/designFour.png',
+  //       },
+  //     ],
+  //   },
+  // ];
   return (
     <div className="px-6 md:px-12">
       <h1 className="text-center font-semibold text-4xl pb-2 md:pb-4">

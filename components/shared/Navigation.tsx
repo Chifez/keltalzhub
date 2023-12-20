@@ -56,7 +56,7 @@ const Navigation = () => {
           ))}
           <Button
             title="Start learning"
-            url="/"
+            url="/enroll"
             extraclass="text-2xl py-2 px-2 md:px-4 text-white"
           />
         </ul>

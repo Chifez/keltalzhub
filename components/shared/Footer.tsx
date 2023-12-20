@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Footer = () => {
   return (
     <div className="bg-[#2D2D2E]">
@@ -14,11 +16,11 @@ const Footer = () => {
         </div>
         <div className="w-full flex flex-col gap-2 text-white ">
           <p>PAGES</p>
-          <p>Home</p>
-          <p>About</p>
-          <p>Courses</p>
-          <p>Testimonials</p>
-          <p>FAQs</p>
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/courses">Courses</Link>
+          <Link href="/testimony">Testimonials</Link>
+          <Link href="/faq">FAQs</Link>
         </div>
         <p className="md:hidden">Privacy Policy</p>
       </div>

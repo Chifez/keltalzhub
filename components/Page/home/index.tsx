@@ -42,12 +42,12 @@ const HomePage = () => {
             <div className="hidden md:flex flex-row gap-2 w-full md:justify-center lg:justify-start">
               <Button
                 title="Start learning"
-                url="/"
+                url="/enroll"
                 extraclass="text-2xl py-2 px-8 text-white"
               />
               <Button
                 title="Or view our courses"
-                url="/"
+                url="/courses"
                 icon={<FaPlayCircle className="fill-[#6B1F00]" />}
                 extraclass="flex items-center justify-center gap-2 border-2 border-[#000B6A] bg-white text-xl py-2 px-4 line-clamp-1"
               />
@@ -60,12 +60,12 @@ const HomePage = () => {
         <div className="flex flex-col gap-2 py-2 w-[60vw] m-auto md:hidden ">
           <Button
             title="Start learning"
-            url="/"
+            url="/enroll"
             extraclass="text-2xl py-2 px-2 text-white"
           />
           <Button
             title="Or view our courses"
-            url="/"
+            url="/courses"
             icon={<FaPlayCircle className="fill-[#6B1F00]" />}
             extraclass="flex items-center justify-center gap-2 border-2 border-[#000B6A] bg-white text-base py-1  "
           />
