@@ -1,5 +1,6 @@
 'use client';
 
+import { getNumber } from '@/libs/utils/getNumber';
 import FAQCard from './FAQCard';
 import { Accordion } from 'react-accessible-accordion';
 const FaqPage = () => {
@@ -11,7 +12,7 @@ const FaqPage = () => {
       </h1>
       <Accordion allowZeroExpanded={true}>
         {list.map((item, idx) => (
-          <FAQCard key={idx} />
+          <FAQCard key={idx} cardNumber={getNumber(idx + 1)} />
         ))}
       </Accordion>
     </div>

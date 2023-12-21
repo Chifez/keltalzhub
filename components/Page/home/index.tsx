@@ -61,17 +61,17 @@ const HomePage = () => {
           <Button
             title="Start learning"
             url="/enroll"
-            extraclass="text-2xl py-2 px-2 text-white"
+            extraclass="text-xl md:!text-2xl py-3 md:py-2 px-2 text-white"
           />
           <Button
             title="Or view our courses"
             url="/courses"
             icon={<FaPlayCircle className="fill-[#6B1F00]" />}
-            extraclass="flex items-center justify-center gap-2 border-2 border-[#000B6A] bg-white text-base py-1  "
+            extraclass="flex items-center justify-center gap-2 border-2 border-[#000B6A] bg-white !text-xl md:!text-2xl py-3 md:py-1"
           />
         </div>
       </div>
-      <div className="px-2 md:px-0 mt-12 w-full ">
+      <div className="px-2 md:px-0 mt-12 w-full  ">
         <Curriculum />
       </div>
     </div>
