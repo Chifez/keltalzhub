@@ -16,6 +16,14 @@ const config: Config = {
       fontFamily: {
         inter: ['var(--font-inter)'],
       },
+      keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'translateY(-2%)' },
+        },
+      },
+      animation: {
+        bouncing: 'bounce 3s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

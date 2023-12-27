@@ -9,7 +9,13 @@ import {
 } from 'react-accessible-accordion';
 import { MdNavigateNext } from 'react-icons/md';
 
-const FAQCard = ({ cardNumber }: { cardNumber: string }) => {
+const FAQCard = ({
+  list,
+  cardNumber,
+}: {
+  list: { question: string; answer: string };
+  cardNumber: string;
+}) => {
   return (
     <AccordionItem className="my-4 md:my-8">
       <AccordionItemHeading className="border bg-white border-[#1F1F1F] p-1 md:p-2 rounded-md w-full">
@@ -20,9 +26,7 @@ const FAQCard = ({ cardNumber }: { cardNumber: string }) => {
               extraclass="!text-2xl md:!text-3xl font-inter font-medium text-white p-2 md:p-3 md:h-full"
             />
 
-            <p className="text-sm md:text-3xl ">
-              What are the prerequisites for enrolling in the training program?
-            </p>
+            <p className="text-sm md:text-3xl ">{list.question}</p>
           </div>
           <AccordionItemState>
             {(state) => {
@@ -39,9 +43,7 @@ const FAQCard = ({ cardNumber }: { cardNumber: string }) => {
       </AccordionItemHeading>
       <AccordionItemPanel className="w-full text-justify py-4 px-3">
         <p className="text-xl md:text-3xl text-[#000B6A] w-full">
-          Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat
-          ut occaecat consequat est minim minim esse tempor laborum consequat
-          esse adipisicing eu reprehenderit enim.
+          {list.answer}
         </p>
       </AccordionItemPanel>
     </AccordionItem>

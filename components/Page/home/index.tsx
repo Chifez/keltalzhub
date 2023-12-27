@@ -5,10 +5,11 @@ import { FaPlayCircle } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import Curriculum from './curriculum';
+import Icon from './icon';
 
 const HomePage = () => {
   return (
-    <div className="h-full w-full">
+    <div className="h-full w-full px-2 md:px-12">
       <div className="w-full h-full flex flex-col text-center lg:text-justify lg:flex-row gap-5 px-5 lg:px-0 py-2">
         <div className="w-full">
           <div>
@@ -54,8 +55,29 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="relative lg:w-[90%] h-[300px] md:h-[450px] w-[80vw] m-auto rounded-2xl overflow-hidden">
-          <Image src="/hero.png" alt="hero" layout="fill" objectFit="cover" />
+        <div className="animate-bouncing relative lg:w-[90%] h-[300px] md:h-[450px] w-[60vw] m-auto rounded-2xl border-8 border-white ">
+          <Image
+            src="/hero.png"
+            alt="hero"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-2xl"
+          />
+          <Button
+            title="Project based learning"
+            icon={<Icon src="/project.svg" />}
+            extraclass="absolute -left-20 z-50 top-[50%] flex items-center justify-center gap-2  bg-white text-[#000B6A] font-medium !text-xs md:!text-base p-2"
+          />
+          <Button
+            title="Certificate of completion"
+            icon={<Icon src="/certfication.svg" />}
+            extraclass="absolute -right-20 z-50 top-[20%] flex items-center justify-center gap-2  bg-white text-[#000B6A] font-medium !text-xs md:!text-base p-2"
+          />
+          <Button
+            title="100% Practical learning"
+            icon={<Icon src="/practical.svg" />}
+            extraclass="absolute -right-20 z-50 top-[70%] flex items-center justify-center gap-2  bg-white text-[#000B6A] font-medium !text-xs md:!text-base p-2"
+          />
         </div>
         <div className="flex flex-col gap-2 py-2 w-[60vw] m-auto md:hidden ">
           <Button
