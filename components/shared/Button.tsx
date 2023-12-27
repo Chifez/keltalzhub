@@ -5,7 +5,7 @@ interface Props {
   title: String;
   icon?: ReactNode;
   extraclass?: String;
-  onClick?: () => void;
+  onClick?: (e: any) => void;
   url?: LinkProps['href'];
 }
 const Button = ({ title, icon, extraclass, onClick, url }: Props) => {

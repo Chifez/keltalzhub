@@ -66,7 +66,11 @@ const page = ({
           </ul>
         </div>
         <div className="flex flex-col item-center justify-center my-8 gap-2">
-          <Button title="enroll for this course" extraclass="text-white p-4 " />
+          <Button
+            title="enroll for this course"
+            extraclass="text-white p-4"
+            url="/enroll"
+          />
           <Link href="#" className=" underline text-[#000B6A] font-medium">
             Download course brochure
           </Link>

@@ -17,11 +17,7 @@ const SelectInput = ({
 
   return (
     <div>
-      <div
-        className={`relative border-2 border-[#2D2D2E] rounded-xl`}
-        // onMouseEnter={() => setOpen(true)}
-        // onMouseLeave={() => setOpen(false)}
-      >
+      <div className={`relative border-2 border-[#2D2D2E] rounded-xl`}>
         <div
           onClick={() => setOpen(!open)}
           className={`flex items-center justify-between py-1 px-4`}
