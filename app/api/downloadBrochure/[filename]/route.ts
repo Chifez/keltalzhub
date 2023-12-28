@@ -24,7 +24,7 @@ import { google } from 'googleapis';
 
 const drive = google.drive({
   version: 'v3',
-  auth: 'YOUR_GOOGLE_DRIVE_API_KEY_OR_OAUTH_CLIENT_ID',
+  auth: 'NEXT_PUBLIC_GOOGLE_OAUTH',
 });
 
 export default async function handler(

@@ -6,7 +6,7 @@ import Button from '@/components/shared/Button';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const page = () => {
+const Page = () => {
   interface Data {
     [key: string]: string;
     name: string;
@@ -138,4 +138,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
