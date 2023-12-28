@@ -40,10 +40,13 @@ const page = () => {
   };
 
   const handleSubmit = async (e: any) => {
-    console.log('cliked 1');
     e.preventDefault();
     const response = await fetch('/api/sendMail', {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
       body: JSON.stringify({
         name: inputData.name,
         contact: inputData.contact,
@@ -54,7 +57,6 @@ const page = () => {
       }),
     });
     console.log(await response.json());
-    console.log('cliked 2');
   };
   const list = [
     {

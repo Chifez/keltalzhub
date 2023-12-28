@@ -14,6 +14,34 @@ const page = ({
     (c) => c.url === `/courses/${course}/${programme}`
   );
 
+  const downloadBrochure = async () => {
+    try {
+      const response = await fetch(
+        `/api/downloadBrochure/${courseInfo?.brochureId}`
+      );
+
+      if (!response.ok) {
+        console.error('Failed to download brochure');
+        return;
+      }
+      const fileName = courseInfo?.title
+        ? `${courseInfo.title}.pdf`
+        : 'course_brochure.pdf';
+
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = fileName || 'course_brochure';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    } catch (error) {
+      console.error('Error downloading brochure:', error);
+    }
+  };
+
   if (!courseInfo) {
     return <div>Course not found</div>;
   }
@@ -71,7 +99,11 @@ const page = ({
             extraclass="text-white p-4"
             url="/enroll"
           />
-          <Link href="#" className=" underline text-[#000B6A] font-medium">
+          <Link
+            href="#"
+            onClick={downloadBrochure}
+            className=" underline text-[#000B6A] font-medium"
+          >
             Download course brochure
           </Link>
         </div>

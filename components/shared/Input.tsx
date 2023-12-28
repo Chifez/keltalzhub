@@ -46,17 +46,6 @@ const Input = ({
             value={value}
             onSelect={onDropdownSelect}
           />
-          {/* <select
-            name=""
-            id=""
-            className="w-full p-4 border-2 border-[#2D2D2E] rounded-xl"
-          >
-            
-              {options?.map((item, idx) => (
-                <option value={item}>{item}</option>
-              ))}
-           
-          </select> */}
         </div>
       )}
     </>
