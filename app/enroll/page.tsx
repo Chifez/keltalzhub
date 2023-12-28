@@ -3,6 +3,8 @@
 import React, { ChangeEvent, useState } from 'react';
 import Input from '@/components/shared/Input';
 import Button from '@/components/shared/Button';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const page = () => {
   interface Data {
@@ -14,7 +16,7 @@ const page = () => {
     location: string;
     occupation: string;
   }
-
+  const [loading, setLoading] = useState(false);
   const [inputData, setInputData] = useState<Data>({
     name: '',
     contact: '',
@@ -40,6 +42,7 @@ const page = () => {
   };
 
   const handleSubmit = async (e: any) => {
+    setLoading(true);
     e.preventDefault();
     const response = await fetch('/api/sendMail', {
       method: 'POST',
@@ -56,7 +59,13 @@ const page = () => {
         occupation: inputData.occupation,
       }),
     });
-    console.log(await response.json());
+    const res = await response.json();
+    if (res.ok) {
+      toast.success(res.message);
+    } else {
+      toast.error(res.message);
+    }
+    setLoading(false);
   };
   const list = [
     {
@@ -118,12 +127,13 @@ const page = () => {
         ))}
         <div className="flex items-center justify-center my-2">
           <Button
-            title="Start learning"
+            title={loading ? 'Sending...' : 'Start learning'}
             extraclass="px-8 py-2 !text-2xl text-white"
             onClick={handleSubmit}
           />
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
