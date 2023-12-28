@@ -1,6 +1,6 @@
 #!/bin/bash
 
-commit_message="$1"  # Assign the first argument to the variable commit_message
+commit_message="$1"  
 
 echo "Initializing Git push..."
 
@@ -21,7 +21,7 @@ fi
 echo "Committed files"
 
 # Push changes to the remote repository
-git push origin master  # Adjust 'main' to your branch name if needed
+git push origin master  
 if [ $? -ne 0 ]; then
     echo "Error: Unable to push changes."
     exit 1
