@@ -27,7 +27,7 @@ const drive = google.drive({
   auth: 'NEXT_PUBLIC_GOOGLE_OAUTH',
 });
 
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
+export async function POST(req: NextApiRequest, res: NextApiResponse) {
   try {
     const fileId = req.query.id as string;
 
