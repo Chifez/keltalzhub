@@ -21,6 +21,7 @@
 
 import { NextApiRequest, NextApiResponse } from 'next';
 import { drive_v3, google } from 'googleapis';
+import { NextRequest, NextResponse } from 'next/server';
 
 const drive = google.drive({
   version: 'v3',
@@ -28,19 +29,12 @@ const drive = google.drive({
 });
 
 export async function POST(
-  req: { query: { id: string } },
-  res: {
-    status: (arg0: number) => {
-      (): any;
-      new (): any;
-      json: { (arg0: { error: string }): void; new (): any };
-      send: { (arg0: drive_v3.Schema$File): void; new (): any };
-    };
-    setHeader: (arg0: string, arg1: string) => void;
-  }
+  req: Request | NextRequest,
+  res: Response | NextResponse
 ) {
   try {
-    const fileId = req.query.id as string;
+    // const fileId = req.query.id as string;
+    const fileId = '232edskdsdsiu78782';
 
     // Validate and sanitize fileId
     if (!isValidFileId(fileId)) {
