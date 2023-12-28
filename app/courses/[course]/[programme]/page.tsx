@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { CourseList } from '@/libs/data/courseData';
 import Image from 'next/image';
@@ -99,13 +100,12 @@ const page = ({
             extraclass="text-white p-4"
             url="/enroll"
           />
-          <Link
-            href="#"
+          <button
             onClick={downloadBrochure}
             className=" underline text-[#000B6A] font-medium"
           >
             Download course brochure
-          </Link>
+          </button>
         </div>
       </div>
     </>
