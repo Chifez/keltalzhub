@@ -20,14 +20,25 @@
 // pages/api/files/[id].ts
 
 import { NextApiRequest, NextApiResponse } from 'next';
-import { google } from 'googleapis';
+import { drive_v3, google } from 'googleapis';
 
 const drive = google.drive({
   version: 'v3',
   auth: 'NEXT_PUBLIC_GOOGLE_OAUTH',
 });
 
-export async function POST(req: NextApiRequest, res: NextApiResponse) {
+export async function POST(
+  req: { query: { id: string } },
+  res: {
+    status: (arg0: number) => {
+      (): any;
+      new (): any;
+      json: { (arg0: { error: string }): void; new (): any };
+      send: { (arg0: drive_v3.Schema$File): void; new (): any };
+    };
+    setHeader: (arg0: string, arg1: string) => void;
+  }
+) {
   try {
     const fileId = req.query.id as string;
 
