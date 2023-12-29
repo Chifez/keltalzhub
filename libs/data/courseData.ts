@@ -8,7 +8,8 @@ export const CourseList = [
         desc: 'This course is designed to introduce participants to the art and techniques of video editing and animation. ',
         image: '/designOne.png',
         url: '/courses/design/video_editing',
-        brochureId: '1Ho6KhlLxZzni6EVPsMrQC8NHrNQW1qfh',
+        brochureId:
+          'https://drive.google.com/file/d/1Ho6KhlLxZzni6EVPsMrQC8NHrNQW1qfh/view?usp=drive_link',
         info: [
           { header: 'Course Duration', content: '8 weeks' },
           { header: 'Training Days', content: 'Tuesday-Friday' },
@@ -21,7 +22,8 @@ export const CourseList = [
         desc: 'The UI/UX Design Training for Beginners course is designed to introduce participants to the principles and practices of user interface (UI) and user experience (UX) design.  ',
         image: '/designTwo.png',
         url: '/courses/design/ui_ux',
-        brochureId: '1My5_oFj2_oWazwSCvPlVaYyBt1pbcQSb',
+        brochureId:
+          'https://drive.google.com/file/d/1My5_oFj2_oWazwSCvPlVaYyBt1pbcQSb/view?usp=drive_link',
         info: [
           { header: 'Course Duration', content: '8 weeks' },
           { header: 'Training Days', content: 'Tuesday-Friday' },
@@ -34,7 +36,8 @@ export const CourseList = [
         desc: 'This class is suitable for individuals who are new to design generally or those who possess fundamental knowledge and are eager to elevate their existing proficiency.',
         image: '/designThree.png',
         url: '/courses/design/graphic_design',
-        brochureId: '18nrzgZYu6X7Z2y-mR80QMMqfLdaWTJ0e',
+        brochureId:
+          'https://drive.google.com/file/d/18nrzgZYu6X7Z2y-mR80QMMqfLdaWTJ0e/view?usp=drive_link',
         info: [
           { header: 'Course Duration', content: '8 weeks' },
           { header: 'Training Days', content: 'Tuesday-Friday' },
@@ -47,7 +50,8 @@ export const CourseList = [
         desc: ' This course is designed to introduce participants to the art and techniques of video editing and animation. ',
         image: '/designFour.png',
         url: '/courses/design/animations',
-        brochureId: '1Ho6KhlLxZzni6EVPsMrQC8NHrNQW1qfh',
+        brochureId:
+          'https://drive.google.com/file/d/1Ho6KhlLxZzni6EVPsMrQC8NHrNQW1qfh/view?usp=drive_link',
         info: [
           { header: 'Course Duration', content: '8 weeks' },
           { header: 'Training Days', content: 'Tuesday-Friday' },
@@ -66,7 +70,8 @@ export const CourseList = [
         desc: 'This class is intended for individuals who are new to design or those who possess fundamental knowledge and are eager to elevate their existing proficiency ',
         image: '/designOne.png',
         url: '/courses/programming/web_development',
-        brochureId: '15U0L9iDu9uT7ec7tlEqzTUIMyXw36dWO',
+        brochureId:
+          'https://drive.google.com/file/d/15U0L9iDu9uT7ec7tlEqzTUIMyXw36dWO/view?usp=drive_link',
         info: [
           { header: 'Course Duration', content: '8 weeks' },
           { header: 'Training Days', content: 'Tuesday-Friday' },
@@ -79,7 +84,8 @@ export const CourseList = [
         desc: 'This class is intended for individuals who are new to design or those who possess fundamental knowledge and are eager to elevate their existing proficiency ',
         image: '/designTwo.png',
         url: '/courses/programming/app_development',
-        brochureId: '',
+        brochureId:
+          'https://drive.google.com/file/d/15U0L9iDu9uT7ec7tlEqzTUIMyXw36dWO/view?usp=drive_link',
         info: [
           { header: 'Course Duration', content: '8 weeks' },
           { header: 'Training Days', content: 'Tuesday-Friday' },
@@ -92,7 +98,8 @@ export const CourseList = [
         desc: 'This class is intended for individuals who are new to design or those who possess fundamental knowledge and are eager to elevate their existing proficiency',
         image: '/designThree.png',
         url: '/courses/programming/machine_learning',
-        brochureId: '',
+        brochureId:
+          'https://drive.google.com/file/d/15U0L9iDu9uT7ec7tlEqzTUIMyXw36dWO/view?usp=drive_link',
         info: [
           { header: 'Course Duration', content: '8 weeks' },
           { header: 'Training Days', content: 'Tuesday-Friday' },
@@ -105,7 +112,8 @@ export const CourseList = [
         desc: 'This class is intended for individuals who are new to design or those who possess fundamental knowledge and are eager to elevate their existing proficiency',
         image: '/designFour.png',
         url: '/courses/programming/data_science',
-        brochureId: '',
+        brochureId:
+          'https://drive.google.com/file/d/15U0L9iDu9uT7ec7tlEqzTUIMyXw36dWO/view?usp=drive_link',
         info: [
           { header: 'Course Duration', content: '8 weeks' },
           { header: 'Training Days', content: 'Tuesday-Friday' },

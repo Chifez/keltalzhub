@@ -15,40 +15,40 @@ const page = ({
     (c) => c.url === `/courses/${course}/${programme}`
   );
 
-  const downloadBrochure = async () => {
-    try {
-      const response = await fetch(
-        `/api/downloadBrochure/${courseInfo?.brochureId}`
-      );
+  // const downloadBrochure = async () => {
+  //   try {
+  //     // const response = await fetch(
+  //     //   `/api/downloadBrochure/${courseInfo?.brochureId}?filename=${courseInfo?.brochureId}`
+  //     // );
+  //     const response = await fetch(`${courseInfo?.brochureId}`);
+  //     if (!response.ok) {
+  //       console.error('Failed to download brochure', response);
+  //       return;
+  //     }
+  //     const fileName = courseInfo?.title
+  //       ? `${courseInfo.title}.pdf`
+  //       : 'course_brochure.pdf';
 
-      if (!response.ok) {
-        console.error('Failed to download brochure');
-        return;
-      }
-      const fileName = courseInfo?.title
-        ? `${courseInfo.title}.pdf`
-        : 'course_brochure.pdf';
+  //     const blob = await response.blob();
+  //     const url = window.URL.createObjectURL(blob);
 
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = fileName || 'course_brochure';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-    } catch (error) {
-      console.error('Error downloading brochure:', error);
-    }
-  };
+  //     const a = document.createElement('a');
+  //     a.href = url;
+  //     a.download = fileName || 'course_brochure';
+  //     document.body.appendChild(a);
+  //     a.click();
+  //     document.body.removeChild(a);
+  //   } catch (error) {
+  //     console.error('Error downloading brochure:', error);
+  //   }
+  // };
 
   if (!courseInfo) {
     return <div>Course not found</div>;
   }
   return (
     <>
-      <div className="flex flex-col items-center justify-center border border-red-600">
+      <div className="flex flex-col items-center justify-center">
         <div className="w-[80%] rounded-lg overflow-hidden">
           <div className="relative w-full h-[250px] ">
             <Image
@@ -100,12 +100,14 @@ const page = ({
             extraclass="text-white p-4"
             url="/enroll"
           />
-          <button
-            onClick={downloadBrochure}
+          <Link
+            href={courseInfo.brochureId}
+            target="_blank"
+            // onClick={downloadBrochure}
             className=" underline text-[#000B6A] font-medium"
           >
             Download course brochure
-          </button>
+          </Link>
         </div>
       </div>
     </>
