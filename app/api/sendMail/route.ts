@@ -9,7 +9,7 @@ interface Ipost {
   location: string;
   occupation: string;
 }
-export async function POST(request: { json: () => PromiseLike<Ipost> }) {
+export async function POST(request: any) {
   try {
     const { name, contact, email, course, location, occupation } =
       await request.json();
