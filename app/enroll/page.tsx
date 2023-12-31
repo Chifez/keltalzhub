@@ -91,10 +91,10 @@ const Page = () => {
       name: 'course',
       dropDown: true,
       options: [
-        'computer design',
-        'graphic design',
+        'Computer training',
+        'Graphic design',
         'UI/UX',
-        'Video editing and Animating',
+        'Video editing and Animations',
       ],
     },
     {

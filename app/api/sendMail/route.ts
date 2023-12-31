@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import smtpTransport from 'nodemailer/lib/smtp-transport';
 
 interface Ipost {
   name: string;
@@ -10,7 +9,7 @@ interface Ipost {
   location: string;
   occupation: string;
 }
-export async function POST(request: any) {
+export async function POST(request: { json: () => PromiseLike<Ipost> }) {
   try {
     const { name, contact, email, course, location, occupation } =
       await request.json();
@@ -20,6 +19,7 @@ export async function POST(request: any) {
         { status: 500 }
       );
     }
+
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -38,6 +38,7 @@ export async function POST(request: any) {
           <p> I am currently a ${occupation} and i reside at ${location},my phone number is ${contact}</p>
           `,
     };
+
     await transporter.sendMail(mailOption);
     return NextResponse.json(
       { message: 'congratulations,your registration details have been sent' },
