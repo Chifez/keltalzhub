@@ -5,6 +5,19 @@ import Image from 'next/image';
 import Button from '@/components/shared/Button';
 import Link from 'next/link';
 
+interface Course {
+  title: string;
+  desc: string;
+  image: string;
+  url: string;
+  brochureId: string;
+  info: {
+    header: string;
+    content: string;
+  }[];
+  headerDesc?: string;
+  audience?: string[];
+}
 const page = ({
   params,
 }: {
@@ -14,9 +27,9 @@ const page = ({
   // const courseInfo = CourseList.flatMap((item) => item.list).find(
   //   (c) => c.url === `/courses/${course}/${programme}`
   // );
-  const courseInfo = CourseList.flatMap((item) => item.list).find(
-    (c) => c.url === `/courses/${course}/${programme}`
-  );
+  const courseInfo: Course | undefined = CourseList.flatMap(
+    (item) => item.list
+  ).find((c) => c.url === `/courses/${course}/${programme}`);
 
   // const downloadBrochure = async () => {
   //   try {
@@ -91,12 +104,11 @@ const page = ({
                 courseInfo.headerDesc ? 'ml-10' : 'mr-0'
               } list-disc`}
             >
-              {courseInfo.audience &&
-                courseInfo.audience.map((item, idx) => (
-                  <li className="text-xl" key={idx}>
-                    {item}
-                  </li>
-                ))}
+              {courseInfo.audience.map((item, idx) => (
+                <li className="text-xl" key={idx}>
+                  {item}
+                </li>
+              ))}
               {/* <li className="text-xl">
               This class is suitable for novice users of After Effects or
               individuals engaged in or aspiring to work in the video industry,
