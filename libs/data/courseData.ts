@@ -35,8 +35,10 @@ export const CourseList = [
           { header: 'Tuition', content: '50,000' },
         ],
         audience: [
-          'This class is suitable for novice users of After Effects or individuals engaged in or aspiring to work in the video industry, or Adobe users desiring to expand their expertise in video enhancements.',
-          'This class covers the fundamental notions and proficiencies indispensable for excelling in animation for motion graphics and visual enhancements, alongside advanced methodologies and tactics.',
+          'Individuals who have a basic understanding of digital technologies and are interested in pursuing a career in UI/UX design.',
+          'Professionals who want to enhance their skills and knowledge in UI/UX design to improve their current job prospects',
+          'Web designers, graphic designers, developers, or other professionals involved in digital product development who want to expand their skill set.',
+          'Students or recent graduates looking to specialize in UI/UX design and seeking a comprehensive introduction to the field.',
         ],
       },
       {
@@ -76,10 +78,8 @@ export const CourseList = [
           { header: 'Tuition', content: '50,000' },
         ],
         audience: [
-          'Individuals who have a basic understanding of digital technologies and are interested in pursuing a career in UI/UX design.',
-          'Professionals who want to enhance their skills and knowledge in UI/UX design to improve their current job prospects',
-          'Web designers, graphic designers, developers, or other professionals involved in digital product development who want to expand their skill set.',
-          'Students or recent graduates looking to specialize in UI/UX design and seeking a comprehensive introduction to the field.',
+          'This class is suitable for novice users of After Effects or individuals engaged in or aspiring to work in the video industry, or Adobe users desiring to expand their expertise in video enhancements.',
+          'This class covers the fundamental notions and proficiencies indispensable for excelling in animation for motion graphics and visual enhancements, alongside advanced methodologies and tactics.',
         ],
       },
     ],
