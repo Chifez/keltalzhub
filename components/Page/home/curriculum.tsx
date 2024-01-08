@@ -23,10 +23,10 @@ const Curriculum = () => {
     },
   ];
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full scrollbar-hide">
       <div
         style={{ backgroundImage: `url(/learning.png)` }}
-        className="w-full md:w-full min-h-[200px] md:min-h-[370px] rounded-lg md:rounded-3xl overflow-hidden bg-no-repeat text-xl text-white md:text-5xl lg:text-6xl flex items-center font-normal px-5 md:px-10 md:leading-[70px] bg-cover bg-center"
+        className="w-full md:w-full min-h-[200px] md:min-h-[370px] rounded-lg md:rounded-3xl overflow-hidden bg-no-repeat text-xl text-white md:text-4xl lg:text-6xl flex items-center font-normal px-5 md:px-10 md:leading-[70px] bg-cover bg-center"
       >
         <p className="w-[70%] xl:w-[60%]">
           Learn with the speed of light with our industry standard curriculum

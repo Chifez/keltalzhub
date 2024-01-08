@@ -21,37 +21,21 @@ const TestimonyPage = () => {
   };
   return (
     <div>
-      <div>
+      <div className="scrollbar-hide">
         <div className="text-center py-4 px-6 lg:px-12">
           <h4 className="text-4xl font-semibold mb-2">Words on the street</h4>
           <p className="text-3xl font-medium">
             No need for explanations, here are our evidence
           </p>
         </div>
-        {/* <div className="hidden md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-4">
-          {list.map((item, idx) => ( */}
+
         <TestimonyCard />
-        {/* ))}
-        </div> */}
-        {/* <div className="block md:hidden">
-          <Slider {...settings}>
-            {list.map((item, idx) => (
-              <TestimonyCard key={idx} />
-            ))}
-          </Slider>
-        </div> */}
+
         <div className="px-6 lg:px-12">
           <h2 className="text-3xl md:text-4xl text-center font-semibold py-10">
             Our Students Work
           </h2>
-          {/* <div className="bg-[#EDF9FF] rounded-md p-4 md:p-8">
-            <Slider {...settings}>
-              {list.map((item, idx) => {
-                return  */}
           <WorkCard />;
-          {/* })}
-            </Slider>
-          </div> */}
         </div>
       </div>
     </div>
