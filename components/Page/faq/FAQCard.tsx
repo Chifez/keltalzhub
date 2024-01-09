@@ -41,7 +41,7 @@ const FAQCard = ({
           </AccordionItemState>
         </AccordionItemButton>
       </AccordionItemHeading>
-      <AccordionItemPanel className="w-full text-justify py-4 px-3">
+      <AccordionItemPanel className="w-full md:text-justify py-4 md:px-8">
         <p className="text-xl md:text-3xl text-[#000B6A] w-full">
           {list.answer}
         </p>
