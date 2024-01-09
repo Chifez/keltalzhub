@@ -14,10 +14,7 @@ export async function POST(request: any) {
     const { name, contact, email, course, location, occupation } =
       await request.json();
     if (!name || !contact || !email || !course || !location || !occupation) {
-      return NextResponse.json(
-        { message: 'Incomplete details' },
-        { status: 500 }
-      );
+      return NextResponse.json({ message: 'Incomplete details', status: 500 });
     }
 
     const transporter = nodemailer.createTransport({
@@ -40,14 +37,11 @@ export async function POST(request: any) {
     };
 
     await transporter.sendMail(mailOption);
-    return NextResponse.json(
-      { message: 'congratulations,your registration details have been sent' },
-      { status: 200 }
-    );
+    return NextResponse.json({
+      message: 'congratulations,your registration details have been sent',
+      status: 200,
+    });
   } catch (error) {
-    return NextResponse.json(
-      { message: 'Failed to send email', error },
-      { status: 500 }
-    );
+    return NextResponse.json({ message: 'Failed to send email', status: 500 });
   }
 }

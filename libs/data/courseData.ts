@@ -49,10 +49,10 @@ export const CourseList = [
         brochureId:
           'https://drive.google.com/file/d/18nrzgZYu6X7Z2y-mR80QMMqfLdaWTJ0e/view?usp=drive_link',
         info: [
-          { header: 'Course Duration', content: '8 weeks' },
+          { header: 'Course Duration', content: '4 weeks' },
           { header: 'Training Days', content: 'Tuesday-Friday' },
           { header: 'Class Type', content: 'Online' },
-          { header: 'Tuition', content: '50,000' },
+          { header: 'Tuition', content: '30,000' },
         ],
         headerDesc:
           'This class is suitable for individuals who are new to design generally or those who possess fundamental knowledge and are eager to elevate their existing proficiency. Upon successful completion of this course, students will be expected to:',

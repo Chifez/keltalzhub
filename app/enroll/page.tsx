@@ -60,8 +60,9 @@ const Page = () => {
       }),
     });
     const res = await response.json();
-    if (res.ok) {
-      toast.success(res.message);
+    console.log(res);
+    if (res.status == 200) {
+      toast.success(res.message, res.status);
     } else {
       toast.error(res.message);
     }
