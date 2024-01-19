@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
 const WorkCard = () => {
-  const list = new Array(4).fill(4);
+  const list = ['/works1.jpg', '/works2.jpg', '/works3.jpg', '/works4.jpg'];
 
   const settings = {
     dots: true,
@@ -28,12 +28,7 @@ const WorkCard = () => {
                 className="relative w-full min-h-[200px] md:min-h-[400px]"
                 key={idx}
               >
-                <Image
-                  src="/works.png"
-                  alt="works"
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <Image src={item} alt="works" layout="fill" objectFit="cover" />
               </div>
             );
           })}

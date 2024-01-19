@@ -13,17 +13,17 @@ const Curriculum = () => {
       title: 'Certification upon Conclusion',
       src: '/certificiation.png',
       description:
-        'Action speaks louder than words and we incorporate that mantra in our tech hub',
+        'Receive a certificate acknowledged in the technology industry. Showcase your expertise with a digital badge for online portfolios.',
     },
     {
       title: 'Continuous Mentorship',
       src: '/mentor.png',
       description:
-        'Action speaks louder than words and we incorporate that mantra in our tech hub',
+        'Benefit from personalized guidance with experienced mentors. Receive insights into career paths and industry trends.',
     },
   ];
   return (
-    <div className="w-full h-full scrollbar-hide">
+    <div className="w-full h-full ">
       <div
         style={{ backgroundImage: `url(/learning.png)` }}
         className="w-full md:w-full min-h-[200px] md:min-h-[370px] rounded-lg md:rounded-3xl overflow-hidden bg-no-repeat text-xl text-white md:text-4xl lg:text-6xl flex items-center font-normal px-5 md:px-10 md:leading-[70px] bg-cover bg-center"

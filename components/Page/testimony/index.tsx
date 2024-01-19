@@ -33,7 +33,7 @@ const TestimonyPage = () => {
 
         <div className="px-6 lg:px-12">
           <h2 className="text-3xl md:text-4xl text-center font-semibold py-10">
-            Our Students Work
+            Ongoing Programs
           </h2>
           <WorkCard />;
         </div>
