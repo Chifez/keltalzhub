@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -13,6 +14,20 @@ const Footer = () => {
           <p>+2349065561484</p>
           <p>Keltalzglobal@gmail.com</p>
           <p className="hidden md:block">Privacy Policy</p>
+          <div className="flex gap-2">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/keltalzglobal?mibextid=ZbWKwL"
+            >
+              <FaFacebook className="w-5 h-5" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/keltalz_tech?igsh=MWFoMXcxbjg0dGhmdw=="
+            >
+              <FaInstagram className="w-5 h-5" />
+            </a>
+          </div>
         </div>
         <div className="w-full flex flex-col gap-2 text-white ">
           <p>PAGES</p>

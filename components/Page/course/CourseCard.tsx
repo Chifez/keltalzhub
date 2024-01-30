@@ -9,11 +9,13 @@ const CourseCard = ({ course }: any) => {
     >
       <p className="text-2xl md:text-4xl">{title}</p>
       <div className="text-base md:text-xl line-clamp-2">{desc}</div>
-      <Button
-        title="View Details"
-        extraclass="bg-[#6B1F00] py-2 px-4 text-white text-xl md:text-3xl"
-        url={url}
-      />
+      {desc !== 'coming soon' && (
+        <Button
+          title="View Details"
+          extraclass="bg-[#6B1F00] py-2 px-4 text-white text-xl md:text-3xl"
+          url={url}
+        />
+      )}
     </div>
   );
 };

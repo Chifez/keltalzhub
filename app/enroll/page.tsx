@@ -96,6 +96,7 @@ const Page = () => {
         'Graphic design',
         'UI/UX',
         'Video editing and Animations',
+        'web development'
       ],
     },
     {

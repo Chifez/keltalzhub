@@ -90,35 +90,49 @@ export const CourseList = [
     list: [
       {
         title: 'web Development',
-        desc: 'This class is intended for individuals who are new to design or those who possess fundamental knowledge and are eager to elevate their existing proficiency ',
+        desc: 'Unlock the power of the internet with our Web Development course! Dive into the essentials of building stunning and responsive websites. From HTML to CSS and JavaScript, acquire the skills to craft an online presence that stands out.',
         image: '/designOne.png',
         url: '/courses/programming/web_development',
         brochureId:
           'https://drive.google.com/file/d/15U0L9iDu9uT7ec7tlEqzTUIMyXw36dWO/view?usp=drive_link',
         info: [
-          { header: 'Course Duration', content: '8 weeks' },
+          { header: 'Course Duration', content: '12 weeks' },
           { header: 'Training Days', content: 'Tuesday-Friday' },
-          { header: 'Class Type', content: 'Online' },
-          { header: 'Tuition', content: '50,000' },
+          { header: 'Class Type', content: 'Live Training' },
+          { header: 'Tuition', content: '150,000' },
+        ],
+        audience: [
+          'Aspiring web developers who want to kickstart their journey into the dynamic world of website creation.',
+          'Individuals with a passion for coding and a desire to build visually appealing and functional websites.',
+          'Entrepreneurs looking to gain hands-on skills in web development to manage their online presence effectively.',
+          'Creative minds eager to translate their ideas into the language of the web.',
+          'Beginners and enthusiasts ready to explore the fundamentals of HTML, CSS, and JavaScript.',
         ],
       },
       {
         title: 'App Development',
-        desc: 'This class is intended for individuals who are new to design or those who possess fundamental knowledge and are eager to elevate their existing proficiency ',
+        desc: ' Learn to create mobile applications that captivate users and make an impact. Our course covers the fundamentals of app design, coding, and deployment. Whether you`re a beginner or looking to enhance your skills,this course empowers you to turn your app ideas into reality.',
         image: '/designTwo.png',
         url: '/courses/programming/app_development',
         brochureId:
           'https://drive.google.com/file/d/15U0L9iDu9uT7ec7tlEqzTUIMyXw36dWO/view?usp=drive_link',
         info: [
-          { header: 'Course Duration', content: '8 weeks' },
+          { header: 'Course Duration', content: '12 weeks' },
           { header: 'Training Days', content: 'Tuesday-Friday' },
-          { header: 'Class Type', content: 'Online' },
-          { header: 'Tuition', content: '50,000' },
+          { header: 'Class Type', content: 'Live Training' },
+          { header: 'Tuition', content: '180,000' },
+        ],
+        audience: [
+          'Budding app developers seeking to bring their innovative app ideas to life',
+          'Tech enthusiasts with a vision for creating mobile applications that make a lasting impact.',
+          'Beginners or individuals with some coding experience looking to enter the world of app development.',
+          'Innovators and creators wanting to build practical skills in designing and coding mobile apps.',
+          'Anyone ready to embark on a journey of turning app dreams into tangible digital products.',
         ],
       },
       {
         title: 'Machine Learning',
-        desc: 'This class is intended for individuals who are new to design or those who possess fundamental knowledge and are eager to elevate their existing proficiency',
+        desc: 'coming soon',
         image: '/designThree.png',
         url: '/courses/programming/machine_learning',
         brochureId:
@@ -132,7 +146,7 @@ export const CourseList = [
       },
       {
         title: 'Data science',
-        desc: 'This class is intended for individuals who are new to design or those who possess fundamental knowledge and are eager to elevate their existing proficiency',
+        desc: 'coming soon',
         image: '/designFour.png',
         url: '/courses/programming/data_science',
         brochureId:

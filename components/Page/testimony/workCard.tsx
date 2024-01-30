@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
 const WorkCard = () => {
-  const list = ['/works1.jpg', '/works2.jpg', '/works3.jpg', '/works4.jpg'];
+  const list = ['/works.jpg', '/works1.jpg', '/works2.jpg', '/works3.jpg'];
 
   const settings = {
     dots: true,
